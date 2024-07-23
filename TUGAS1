@@ -1,0 +1,44 @@
+// Definisi kelas handphone
+class handphone {
+    // Properti atau atribut dari kelas handphone
+    String jenis;
+    String warna;
+    int panjangCm;
+
+    // Konstruktor untuk inisialisasi objek handphone
+    public handphone(String jenis, String warna, int panjangCm) {
+        this.jenis = jenis;
+        this.warna = warna;
+        this.panjangCm = panjangCm;
+    }
+
+    // Method untuk menampilkan informasi handphone
+    public void displayInfo() {
+        System.out.println("Jenis: " + jenis);
+        System.out.println("Warna: " + warna);
+        System.out.println("Panjang (cm): " + panjangCm);
+    }
+
+    // Method untuk membuat handphone menyala
+    public void menyala() {
+        System.out.println(jenis + " sedang menyala.");
+    }
+}
+
+// Kelas utama (main class)
+public class Main {
+    public static void main(String[] args) {
+        // Membuat objek dari kelas handphone
+     handphone handphone1 = new handphone("vivo y81", "Merah", 10);
+     handphone handphone2 = new handphone("nokia", "Biru", 6);
+
+        // Memanggil method untuk menampilkan informasi
+        System.out.println("Informasi handphone 1:");
+        handphone1.displayInfo();
+        handphone1.menyala();
+
+        System.out.println("\ninformasi handphone 2:");
+        handphone2.displayInfo();
+        handphone2.menyala();
+    }
+}
